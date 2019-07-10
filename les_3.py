@@ -25,10 +25,11 @@ simple_func([16, -17, 2, 78.7, False, False, {'True': True}, 555, 12, 23, 42, 'D
 
 # задание №2
 
-import numbers
+
 list_2 = []
-list_1 = [16, -17, 2, 78.7, False, False, {'True': True}, 555, 12, 23, 42, 'DD']
-list_2 = [num for num in list_1 if isinstance(num, (int,float))]
-print(list_2)
-list_2.sort()
-print(list_2)
+def list (l):
+    list_2 = [num for num in l if isinstance(num, (int,float))]
+    print(list_2)
+    list_2.sort()
+    print(list_2)
+list([16, -17, 2, 78.7, False, False, {'True': True}, 555, 12, 23, 42, 'DD'])
